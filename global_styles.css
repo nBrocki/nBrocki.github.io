@@ -8,7 +8,10 @@
     --inactive: #147aff11;
     --shadow: #1479ff24;
     --grey: rgba(128, 128, 128, 0.555) ;
+    --default-p : 1em;
 }
+
+
 
 html {
     height  : 100%;
@@ -87,3 +90,17 @@ body{
       opacity:0;
       z-index:-1;
   }
+
+  .cv-stage{
+      margin-top:5em;
+  }
+
+  @media screen and (max-width: 780px){
+    :root{
+        --default-p : 0.5em;
+    }
+
+    .cv-stage{
+        margin-top:1em;
+    }
+}
