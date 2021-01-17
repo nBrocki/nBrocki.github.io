@@ -67,7 +67,7 @@ body{
 
   .content-wrapper{
       overflow-y: auto;
-      padding: 1em 1em 2em 1em;
+      padding: 0em 0em 2em 0em;
       
   }
 
@@ -95,6 +95,15 @@ body{
       margin-top:5em;
   }
 
+  .headline{
+      position: sticky;
+      padding: 1em;
+      margin: 0;
+      top: 0em;
+      background-color: var(--secondary-bg);
+      box-shadow: 0 0 20px var(--shadow);
+  }
+
   @media screen and (max-width: 780px){
     :root{
         --default-p : 0.5em;
@@ -102,5 +111,10 @@ body{
 
     .cv-stage{
         margin-top:1em;
+    }
+
+    .headline{
+        font-size: 1.3em;
+        padding: 1em;
     }
 }
